@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import pymatgen as pg
 import sys
 import numpy as np
