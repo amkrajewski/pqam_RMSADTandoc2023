@@ -177,8 +177,9 @@ def get_VEC_SD(elements):
 
 
 def predict(
-    comp: pg.core.Composition, outputType: str = "array"
-) -> Union([dict, list]):
+        comp: pg.core.Composition, 
+        outputType: str = "array") -> Union([dict, list]):
+    
     elements = {}
     for element in comp:
         elements[str(element)] = comp.get_atomic_fraction(element)
