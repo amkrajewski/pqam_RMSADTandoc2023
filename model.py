@@ -3,6 +3,7 @@
 import pymatgen as pg
 import sys
 import numpy as np
+from typing import Union
 
 element_properties = {
                      "Ti":{"VEC":4},
@@ -375,9 +376,9 @@ def get_VEC_SD(elements):
     
     return SD
 
-def get_RMSAD(chemform):
+def predict(comp: pg.core.Composition,
+            outputType: str = 'array') -> Union([dict, list]):
    
-    comp = pg.Composition(chemform)
     elements = {}
     for element in comp:
         elements[str(element)] = comp.get_atomic_fraction(element)
@@ -413,13 +414,13 @@ def get_RMSAD(chemform):
         Dip2 * VEC_SD2
     ))
     
-    return RMSAD
-
-def main():
-    chemform = sys.argv[1]
-    RMSAD = get_RMSAD(chemform)
-    print(RMSAD)
-    
+    if outputType=='array':
+        return RMSAD
+    elif outputType=='dict':
+        return {'rmsad_Tandoc2023': RMSAD}
+    else:
+        raise ValueError('Not recognized output type requested.')
 
 if __name__ == "__main__":
-    main()
+    assert len(sys.argv)==2
+    print(predict(pg.core.Composition(sys.argv[1]), outputType='array'))
