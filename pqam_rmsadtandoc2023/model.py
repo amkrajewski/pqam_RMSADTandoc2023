@@ -1,4 +1,4 @@
-import pymatgen as pg
+from pymatgen.core import Composition
 import sys
 import numpy as np
 from typing import Union
@@ -177,11 +177,11 @@ def get_VEC_SD(elements):
 
 
 def predict(
-        comp: Union[pg.core.Composition, str],
+        comp: Union[Composition, str],
         outputType: str = "array") -> Union[dict, list]:
 
-    assert isinstance(comp, (str, pg.core.Composition)), "comp must be a string or a pymatgen Composition object."
-    
+    assert isinstance(comp, (str, Composition)), "comp must be a string or a pymatgen Composition object."
+
     if isinstance(comp, str):
         comp = Composition(comp)
     
@@ -224,4 +224,4 @@ def predict(
 
 if __name__ == "__main__":
     assert len(sys.argv) == 2
-    print(predict(pg.core.Composition(sys.argv[1]), outputType="array"))
+    print(predict(Composition(sys.argv[1]), outputType="array"))
