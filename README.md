@@ -1,5 +1,11 @@
 # Lattice-Distortion
 
+## This Fork
+
+This small repository is a lightweight fork version of the original one by Tandoc. It is only slightly modified to fit automated pipelines of the [ULTERA Database (ultera.org)](https://ultera.org) infrastrcutre, which expects `model.py` script with `predict(comp: pymatgen.core.Composition)` function returning an ordered array of output numbers or a labeled dictionary of them.
+
+## Original README by Tandoc 
+
 This repository contains relevant code and data for "Mining lattice distortion, strength, and intrinsic ductility of refractory high-entropy alloys using physics-informed statistical learning" by Christopher Tandoc, Yong-Jie Hu, Liang Qi, and Peter K. Liaw to be published in npj Computational Materials
 
 RMSAD_tool.py is a linux command line script written in python that takes a chemical composition in the form of a text string and prints the lattice distortion in angstroms. 
