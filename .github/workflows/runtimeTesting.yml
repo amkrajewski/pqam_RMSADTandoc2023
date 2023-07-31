@@ -1,4 +1,4 @@
-runname: small runtime test is everything runs
+name: small runtime test
 
 on: [push]
 
