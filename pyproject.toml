@@ -19,7 +19,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Chemistry",
     "Topic :: Scientific/Engineering :: Physics",
 ]
-description = "PyQAlloy-compatible Model for RMSAD prediction based on [Tandoc 2023 (10.1038/s41524-023-00993-x)](https://doi.org/10.1038/s41524-023-00993-x)"
+description = "PyQAlloy-compatible Model for RMSAD prediction based on Tandoc 2023 (https://doi.org/10.1038/s41524-023-00993-x)"
 readme = "README.md"
 
 requires-python = ">=3.9"
