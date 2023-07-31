@@ -1,8 +1,19 @@
 # Lattice-Distortion
 
+Release: ![PyPI](https://img.shields.io/pypi/v/pqam-rmsadtandoc2023)
+
+Tests: [![small runtime test](https://github.com/amkrajewski/pqam_RMSADTandoc2023/actions/workflows/runtimeTesting.yml/badge.svg)](https://github.com/amkrajewski/pqam_RMSADTandoc2023/actions/workflows/runtimeTesting.yml)
+
+License: [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+
 ## This Fork
 
-This small repository is a lightweight fork version of the original one by Tandoc. It is only slightly modified to fit automated pipelines of the [ULTERA Database (ultera.org)](https://ultera.org) infrastrcutre, which expects `model.py` script with `predict(comp: pymatgen.core.Composition)` function returning an ordered array of output numbers or a labeled dictionary of them.
+This small repository is a lightweight fork version of the original one by Tandoc. It is only slightly modified to fit automated pipelines of the [ULTERA Database (ultera.org)](https://ultera.org) infrastrcutre, which expects `model.py` script with `predict(comp: pymatgen.Composition)` function returning an ordered array of output numbers or a labeled dictionary of them.
+
+Output Order: [`rmsad_Tandoc2023`]
+
+Output Meaning (all based on [10.1038/s41524-023-00993-x](https://doi.org/10.1038/s41524-023-00993-x)):
+- `rmsad_Tandoc2023` - Root Mean Squared Atomic Displacement in the units of Angstrom
 
 ## Original README by Tandoc 
 
