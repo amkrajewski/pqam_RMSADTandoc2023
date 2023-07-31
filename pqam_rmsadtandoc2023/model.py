@@ -177,8 +177,13 @@ def get_VEC_SD(elements):
 
 
 def predict(
-        comp: pg.core.Composition, 
-        outputType: str = "array") -> Union([dict, list]):
+        comp: Union[pg.core.Composition, str],
+        outputType: str = "array") -> Union[dict, list]:
+
+    assert isinstance(comp, (str, pg.core.Composition)), "comp must be a string or a pymatgen Composition object."
+    
+    if isinstance(comp, str):
+        comp = Composition(comp)
     
     elements = {}
     for element in comp:
