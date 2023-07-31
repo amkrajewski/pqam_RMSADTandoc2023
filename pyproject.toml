@@ -28,6 +28,6 @@ dependencies = [
 ]
 
 [project.urls]
-"Documentation" = https://github.com/tandocca/Lattice-Distortion
+"Documentation" = "https://github.com/tandocca/Lattice-Distortion"
 "Homepage" = "https://github.com/amkrajewski/pqam_RMSADTandoc2023"
 "Bug Tracker" = "https://github.com/amkrajewski/pqam_RMSADTandoc2023/issues"
