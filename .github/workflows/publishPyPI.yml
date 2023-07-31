@@ -1,8 +1,9 @@
 name: Upload to PyPI
 
 on:
-  release:
-    types: [release]
+  push:
+    tags:
+      - '**'
 
 jobs:
   deploy:

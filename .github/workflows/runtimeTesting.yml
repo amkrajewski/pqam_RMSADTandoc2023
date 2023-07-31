@@ -33,4 +33,4 @@ jobs:
         
     - name: Test from running as PyQAlloy model
       run: |
-        python -c "import pqam_rmsadtandoc2023 as m;m.predict('Mo25 Nb25 Hf50');m.predict('MoNbHf'),m.predict('Mo33.3 Nb33.3 Hf33.3')"
+        python -c "import pqam_rmsadtandoc2023 as m;print(m.predict('Mo25 Nb25 Hf50'));print(m.predict('MoNbHf')),print(m.predict('Mo33.3 Nb33.3 Hf33.3'))"
