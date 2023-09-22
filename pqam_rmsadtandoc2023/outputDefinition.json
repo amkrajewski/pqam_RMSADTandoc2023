@@ -1,3 +1,7 @@
 [
-    {"rmsad_Tandoc2023": "Root Mean Squared Atomic Displacement in the units of Angstrom"}
+    {
+        "name": "rmsad_Tandoc2023",
+        "definition": "Root Mean Squared Atomic Displacement", 
+        "unit": "Angstrom"
+    }
 ]
