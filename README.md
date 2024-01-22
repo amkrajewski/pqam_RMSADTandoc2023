@@ -50,3 +50,7 @@ or from command line like
 >
 >training.ipynb and training_data.csv contains code and data to reproduce the rmsad model training that was performed in the paper
 >-jupyter notebook is needed to open training.ipynb, dependencies are numpy, pymatgen, matplotlib (https://matplotlib.org/), pandas (https://pandas.pydata.org/), and >sklearn(https://scikit-learn.org/stable/)
+
+## Miscellaneous
+
+Last maintenance check: January 22nd, 2024
