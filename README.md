@@ -2,6 +2,8 @@
 
 Release: [![PyPI](https://img.shields.io/pypi/v/pqam-rmsadtandoc2023)](https://pypi.org/project/pqam-rmsadtandoc2023)
 
+Compatible with: [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pqam_RMSADTandoc2023)](https://pypi.org/project/pqam_RMSADTandoc2023)
+
 Tests: [![small runtime test](https://github.com/amkrajewski/pqam_RMSADTandoc2023/actions/workflows/runtimeTesting.yml/badge.svg)](https://github.com/amkrajewski/pqam_RMSADTandoc2023/actions/workflows/runtimeTesting.yml)
 
 License: [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
