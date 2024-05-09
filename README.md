@@ -10,7 +10,7 @@ License: [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.
 
 ## This Fork
 
-This small repository is a lightweight fork (with extra checks) version of the original one by Tandoc. It is only slightly modified to fit automated pipelines of the [ULTERA Database (ultera.org)](https://ultera.org) infrastrcutre, which expects `model.py` script with `predict(comp: pymatgen.Composition)` and `predict(comp: str)` function returning an ordered array of output numbers or a labeled dictionary of them.
+This small repository is a lightweight fork (with extra checks) version of the original one by Tandoc. It is only slightly modified to fit automated pipelines of the [ULTERA Database (ultera.org)](https://ultera.org) infrastrcutre, which expects `model.py` script with `predict(comp: pymatgen.Composition)` and `predict(comp: str)` function returning an ordered array of output numbers or a labeled dictionary of them corresponding to the machine-readible definition under `outputDefinition.json`.
 
 Chemical Space: `["Ti", "Zr", "Hf", "V", "Nb", "Ta", "Mo", "W", "Re", "Ru"]`
 
