@@ -187,7 +187,11 @@ def predict(
     
     elements = {}
     for element in comp:
-        elements[str(element)] = comp.get_atomic_fraction(element)
+        elStr = str(element)
+        if elStr not in ["Ti", "Zr", "Hf", "V", "Nb", "Ta", "Mo", "W", "Re", "Ru"]:
+            raise NotImplementedError(
+                f"Element {elStr} passed as an input has not been implemented within Tandoc 2023 model covering Ti, Zr, Hf, V, Nb, Ta, Mo, W, Re, Ru")
+        elements[elStr] = comp.get_atomic_fraction(element)
     pairs = {}
     for element1 in elements:
         for element2 in elements:
