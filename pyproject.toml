@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pqam_rmsadtandoc2023"
-version = "0.1.5"
+version = "0.1.6"
 authors = [
   { name="Adam Krajewski", email="ak@psu.edu" },
 ]
@@ -28,7 +28,8 @@ readme = "README.md"
 
 requires-python = ">=3.9"
 dependencies = [
-    "pymatgen>=2024.2.20"
+    "pymatgen>=2024.2.20",
+    "numpy>=1.25.0,<2.0.0"
 ]
 
 [project.urls]
